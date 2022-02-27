@@ -442,9 +442,10 @@ input[type="checkbox"]:checked + label {
 }
 
 
+
 /*-------- 푸터 --------*/
 .mainfooter-box {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   width: var(--site-size);
   height: 464px;
@@ -465,9 +466,27 @@ input[type="checkbox"]:checked + label {
 }
 
 .sb-foobox li {
-  padding-top: 3px;
+  padding-top: 6px;
+  padding-left: 78px;
   color: #c8c8c8;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.sb-foobox-2 li {
+  padding-top: 6px;
+  padding-left: 38px;
+  color: #a8a8a8;
+  font-size: 14px;
+}
+
+.sb-foobox-3 li {
+  padding-top: 6px;
+  padding-left: 35px;
+  color: #c8c8c8;
+  font-size: 14px;
+}
+.foobox-2__main li {
+  padding-top: 6px;
 }
 
 .foobox-3__end .icon-1 {
