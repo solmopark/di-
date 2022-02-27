@@ -54,7 +54,7 @@ html > body {
 }
 .header a {
   color: white;
-  margin: 0 20px;
+  margin: 0 0px;
   font-weight: bold;
 }
 /* 로고 */
@@ -74,14 +74,14 @@ html > body {
 
 /*-------- 메뉴 --------*/
 .d-menu-1 {
-  padding-left: 120px;
-  padding-right: 20px;
+  padding-left: 140px;
   font-weight: bold;
   font-size: 25px;
 }
 
 .d-menu-1 > li {
   position: relative;
+  padding-right: 40px;
 }
 
 .d-menu-1 > li > a {
@@ -90,11 +90,28 @@ html > body {
 }
 
 /*-- 메뉴 볼 --*/
-.d-menu-box > ul > li > a > .menu-ball::after {
+.d-menu-1 >li > a > .menu-ball-1::after {
   content: "";
   position: absolute;
   top: 2%;
-  left: 46%;
+  left:12%;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.d-menu-1 >li:hover > a > .menu-ball-1::after {
+  opacity: 1;
+  visibility: visible;
+}
+.d-menu-1 li > a > .menu-ball::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 28%;
   width: 5px;
   height: 5px;
   background-color: #fff;
@@ -104,7 +121,7 @@ html > body {
   transition: opacity 0.3s;
 }
 
-.d-menu-box > ul > li:hover > a > .menu-ball::after {
+.d-menu-1 li:hover > a > .menu-ball::after {
   opacity: 1;
   visibility: visible;
 }
