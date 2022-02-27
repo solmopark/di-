@@ -731,7 +731,7 @@ html > body .poster-box .swiper-button-disabled {
   font-family: "Font Awesome 5 Free";
   color: rgba(255, 255, 255, 0.8);
   position: absolute;
-  top: 35%;
+  top: 42%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
