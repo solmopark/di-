@@ -426,3 +426,24 @@ html > body {
   transform: translateY(-20px);
   /*  밑에서 위로 올라오게 하기.  */
 }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #332387 #b79ff7;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #332387;
+  border-radius: 10px;
+  border: 3px outset #ffffff;
+}
