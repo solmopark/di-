@@ -220,7 +220,6 @@ input[type="checkbox"]:checked + label {
 
 /*-------- 상단 --------*/
 .first-top {
-  border-bottom: 0.5px solid #404040;
   height: 30px;
   font-size: 14px;
   width: var(--site-width);
@@ -230,6 +229,7 @@ input[type="checkbox"]:checked + label {
 
 .first-bar {
   padding-right: 340px;
+  border-bottom: 0.5px solid #404040;
 }
 
 /*---- 언어설정 ----*/
