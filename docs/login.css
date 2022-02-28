@@ -40,13 +40,6 @@ html {
 }
 
 
-
-.mr-2.5 {
-  margin-right: 10px;
-}
-
-
-
 .blur {
   filter: blur(200px);
   -webkit-filter: blur(200px);
@@ -252,11 +245,14 @@ input[type="checkbox"]:checked + label {
 
 .menu-lang a > span {
   visibility: hidden;
-  transition: visibility 0.3s;
+  transition: visibility 2s;
 }
+
 .menu-lang a:hover > span {
   visibility: visible;
+  transition: visibility 0.3s;
 }
+
 
 .language-box {
   height: 24px;
@@ -264,7 +260,8 @@ input[type="checkbox"]:checked + label {
   width: 100px;
   transition: height 0.2s;
   -webkit-transition: height 0.2s;
-  margin-right: 0px;
+  margin-right: 10px;
+  
 }
 
 .language-box:hover {

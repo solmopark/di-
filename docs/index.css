@@ -68,12 +68,13 @@ html {
 
 /*---------버튼-------*/
 .up-btn {
+  cursor:pointer;
   position: fixed;
   bottom: 0;
   right: 4%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s;
+  transition: 0.2s;
   z-index: 1000;
 }
 
@@ -86,7 +87,6 @@ html {
 
 /*-------- 상단 --------*/
 .first-top {
-  border-bottom: 0.5px solid #404040;
   height: 30px;
   font-size: 14px;
   width: var(--site-width);
@@ -95,6 +95,7 @@ html {
 }
 
 .first-bar {
+  border-bottom: 0.5px solid #404040;
   padding-right: 340px;
 }
 
@@ -118,11 +119,14 @@ html {
 
 .menu-lang a > span {
   visibility: hidden;
-  transition: visibility 0.3s;
+  transition: visibility 2s;
 }
+
 .menu-lang a:hover > span {
   visibility: visible;
+  transition: visibility 0.3s;
 }
+
 
 .language-box {
   height: 24px;
@@ -130,7 +134,8 @@ html {
   width: 100px;
   transition: height 0.2s;
   -webkit-transition: height 0.2s;
-  margin-right: 0px;
+  margin-right: 10px;
+  
 }
 
 .language-box:hover {
@@ -138,6 +143,7 @@ html {
   background-color: rgba(8, 14, 32, 0.7);
   z-index: 20;
 }
+
 
 .language-box ul {
   padding: 0;
@@ -308,6 +314,10 @@ html {
 }
 
 /*-------- 스와이퍼 --------*/
+.main-swiper{
+  padding-top:130px;
+  cursor:pointer;
+}
 .main-swiper .section-1 {
   overflow: hidden;
   padding-bottom: 100px;
@@ -406,6 +416,7 @@ html {
 
 /*-------- 독점 --------*/
 .original-box {
+  cursor:pointer;
   width: var(--site-size);
   margin-left: auto;
   margin-right: auto;
@@ -525,6 +536,7 @@ html > body .poster-box .swiper-button-disabled {
 
 /*-------- 탑20 --------*/
 .top20-box {
+  cursor:pointer;
   padding-bottom: 170px;
 }
 
@@ -615,6 +627,7 @@ html > body .poster-box .swiper-button-disabled {
 
 /*--------  추천 --------*/
 .recommend-box {
+  cursor:pointer;
   margin-top: 0px;
   padding-bottom: 30px;
 }
@@ -677,6 +690,7 @@ html > body .poster-box .swiper-button-disabled {
 
 /*-------- 최신작 --------*/
 .new-box {
+  cursor:pointer;
   padding-bottom: 30px;
 }
 
@@ -697,6 +711,7 @@ html > body .poster-box .swiper-button-disabled {
 
 /*-------- 클립 --------*/
 .clip-video-box {
+  cursor:pointer;
   padding-top: 50px;
 }
 
@@ -832,6 +847,7 @@ html > body .poster-box .swiper-button-disabled {
   content: "\f078";
   font-weight: 900;
   float: right;
+  cursor:pointer;
 }
 
 .list-1 > li.active > div::after {

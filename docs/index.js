@@ -37,7 +37,7 @@ $(document).ready(function () {
       {
         scrollTop: 0
       },
-      1000
+      500
     );
   });
 });
@@ -47,9 +47,9 @@ $(window).scroll(function () {
 
   console.log(test);
 
-  if (test >= 1000) {
+  if (test >= 500) {
     $(".up-btn").addClass("active");
-  } else if (test <= 1000) {
+  } else if (test <= 500) {
     $(".up-btn").removeClass("active");
   }
 });

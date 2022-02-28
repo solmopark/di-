@@ -428,6 +428,7 @@ html > body {
 
 /*---------버튼-------*/
 .up-btn {
+  cursor: pointer;
   position: fixed;
   bottom: 0;
   right: 4%;
