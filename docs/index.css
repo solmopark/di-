@@ -762,7 +762,7 @@ html > body .poster-box .swiper-button-disabled {
 .question-box::after {
   content: "";
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 46.8%;
   width: 124px;
   height: 3px;
