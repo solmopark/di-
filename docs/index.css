@@ -410,21 +410,19 @@ html {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  bottom: -71.8%;
+  bottom: -51.8%;
 }
 
 .original-box .back-box {
   position: absolute;
-  top: 2.4%;
+  top: 28.1%;
   left: -27.4%;
   width: 1920px;
-  height: 400px;
+  height: 410px;
+  z-index: -1;
   background-color: var(--site-bg);
 }
 
-.original-box .swiper-button-next {
-  position: relative;
-}
 
 /*--------- poster-box ----------*/
 .poster-box .swiper {
@@ -458,7 +456,7 @@ html {
 
 
 
-.poster-box-1 .swiper-pagination.swiper-pagination-fraction {
+.poster-box .swiper-pagination.swiper-pagination-fraction {
   position: absolute;
   right: 0;
   top: 0;
@@ -475,8 +473,6 @@ html {
 html > body .poster-box .swiper-button-disabled {
   opacity: 0.2;
 }
-
-
 .poster-box .swiper-button-next,
 .poster-box .swiper-button-prev {
   --swiper-navigation-size: 40px;
@@ -755,6 +751,7 @@ html > body .poster-box .swiper-button-disabled {
 
 /*======== 자주묻는질문 ========*/
 .question-box {
+  cursor: pointer;
   padding-top: 100px;
   height: 740px;
 }
@@ -762,7 +759,7 @@ html > body .poster-box .swiper-button-disabled {
 .question-box::after {
   content: "";
   position: absolute;
-  top: 24%;
+  top: 22%;
   left: 46.8%;
   width: 124px;
   height: 3px;
