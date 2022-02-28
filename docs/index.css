@@ -86,6 +86,7 @@ html {
 
 /*-------- 상단 --------*/
 .first-top {
+  border-bottom: 0.5px solid #404040;
   height: 30px;
   font-size: 14px;
   width: var(--site-width);
@@ -95,7 +96,6 @@ html {
 
 .first-bar {
   padding-right: 340px;
-  border-bottom: 0.5px solid #404040;
 }
 
 /*---- 언어설정 ----*/
@@ -410,16 +410,20 @@ html {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  bottom: -48.1%;
+  bottom: -71.8%;
 }
 
 .original-box .back-box {
   position: absolute;
-  top: 34.6%;
+  top: 2.4%;
   left: -27.4%;
   width: 1920px;
   height: 400px;
   background-color: var(--site-bg);
+}
+
+.original-box .swiper-button-next {
+  position: relative;
 }
 
 /*--------- poster-box ----------*/
@@ -452,20 +456,9 @@ html {
   position: relative;
 }
 
-.poster-box .swiper-button-next,
-.poster-box .swiper-button-prev {
-  --swiper-navigation-size: 40px;
-  --swiper-navigation-color: var(--site-btn-color);
-  left: -4.2%;
-}
 
-.poster-box .swiper-button-next {
-  left: auto;
-  top: -50%;
-  right: -102.2%;
-}
 
-.poster-box .swiper-pagination.swiper-pagination-fraction {
+.poster-box-1 .swiper-pagination.swiper-pagination-fraction {
   position: absolute;
   right: 0;
   top: 0;
@@ -482,15 +475,17 @@ html {
 html > body .poster-box .swiper-button-disabled {
   opacity: 0.2;
 }
-.poster-box-1 .swiper-button-next,
-.poster-box-1 .swiper-button-prev {
+
+
+.poster-box .swiper-button-next,
+.poster-box .swiper-button-prev {
   --swiper-navigation-size: 40px;
   --swiper-navigation-color: var(--site-btn-color);
   left: -4.2%;
   top: 58%;
 }
 
-.poster-box-1 .swiper-button-next {
+.poster-box .swiper-button-next {
   position: absolute;
   top: 58%;
   right: -4.2%;
@@ -634,7 +629,7 @@ html > body .poster-box .swiper-button-disabled {
 }
 
 /* 슬라이드-이미지 */
-.poster-box-4 .swiper-slide .img-box::before {
+.recommend-box .swiper-slide .img-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -646,11 +641,11 @@ html > body .poster-box .swiper-button-disabled {
   height: 362px;
 }
 
-.poster-box-4 .swiper-slide:hover .img-box::before {
+.recommend-box .swiper-slide:hover .img-box::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.poster-box-4 .swiper-slide .img-box::after {
+.recommend-box .swiper-slide .img-box::after {
   content: "\f144";
   font-family: "Font Awesome 5 Free";
   color: rgba(255, 255, 255, 0.8);
@@ -665,19 +660,19 @@ html > body .poster-box .swiper-button-disabled {
   cursor: pointer;
 }
 
-.poster-box-4 .swiper-slide:hover .img-box::after {
+.recommend-box .swiper-slide:hover .img-box::after {
   opacity: 1;
 }
 
-.swiper-box-4 .swiper-button-next,
-.swiper-box-4 .swiper-button-prev {
+.recommend-box .swiper-button-next,
+.recommend-box .swiper-button-prev {
   --swiper-navigation-size: 40px;
   --swiper-navigation-color: var(--site-btn-color);
   left: -4.2%;
   top: 46%;
 }
 
-.swiper-box-4 .swiper-button-next {
+.recommend-box .swiper-button-next {
   position: absolute;
   top: 46%;
   right: -4.2%;
@@ -689,15 +684,15 @@ html > body .poster-box .swiper-button-disabled {
   padding-bottom: 30px;
 }
 
-.swiper-box-5 .swiper-button-next,
-.swiper-box-5 .swiper-button-prev {
+.new-box .swiper-button-next,
+.new-box .swiper-button-prev {
   --swiper-navigation-size: 40px;
   --swiper-navigation-color: var(--site-btn-color);
   left: -4.2%;
   top: 46%;
 }
 
-.swiper-box-5 .swiper-button-next {
+.new-box .swiper-button-next {
   position: absolute;
   top: 46%;
   right: -4.2%;
@@ -731,7 +726,7 @@ html > body .poster-box .swiper-button-disabled {
   font-family: "Font Awesome 5 Free";
   color: rgba(255, 255, 255, 0.8);
   position: absolute;
-  top: 42%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
@@ -761,7 +756,7 @@ html > body .poster-box .swiper-button-disabled {
 /*======== 자주묻는질문 ========*/
 .question-box {
   padding-top: 100px;
-  height: 600px;
+  height: 680px;
 }
 
 .question-box::after {
@@ -852,7 +847,7 @@ html > body .poster-box .swiper-button-disabled {
   font-weight: 800;
   width: var(--site-size);
   height: 464px;
-  background-image: url(https://cdn.jsdelivr.net/gh/solmopark/dipl/docs/img/footer__back.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/solmopark/dipl/docs/img/footer_back__img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -896,7 +891,6 @@ html > body .poster-box .swiper-button-disabled {
   width: 200px;
   height: 40px;
 }
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

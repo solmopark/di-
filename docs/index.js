@@ -115,7 +115,7 @@ function SwiperBox1__init() {
 SwiperBox1__init();
 
 //디즈니독점
-const swiper2 = new Swiper('.poster-box .swiper', {
+const swiper2 = new Swiper('.original-box .swiper', {
   // Optional parameters
   slidesPerView: 5,
   spaceBetween: 20,
@@ -128,15 +128,15 @@ const swiper2 = new Swiper('.poster-box .swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.poster-box .swiper-pagination',
+    el: '.original-box .swiper-pagination',
     dynamicBullets: true,
     clickable:true
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.poster-box .swiper-button-next',
-    prevEl: '.poster-box .swiper-button-prev',
+    nextEl: '.original-box .swiper-button-next',
+    prevEl: '.original-box .swiper-button-prev',
   },
 });
 
@@ -180,20 +180,20 @@ const sub__swiper = new Swiper('.subject-box .swiper', {
 
 
 // 추천
-const swiper__4 = new Swiper('.poster-box-4 .swiper', {
+const swiper__4 = new Swiper('.swiper-box-4 .swiper', {
  slidesPerView: 5, // 동시에 보여줄 슬라이드 갯수
   spaceBetween: 20, // 슬라이드간 간격
   slidesPerGroup: 5, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
   
   // Navigation arrows
   navigation: {
-    nextEl: ".poster-box-4 .swiper-button-next",
-    prevEl: ".poster-box-4 .swiper-button-prev"
+    nextEl: ".swiper-box-4 .swiper-button-next",
+    prevEl: ".swiper-box-4 .swiper-button-prev"
   },
 });
 
 // 최신작
-const swiper5 = new Swiper('.poster-box-5 .swiper', {
+const swiper__5 = new Swiper('.new-box .swiper', {
   // Optional parameters
   slidesPerView: 5, // 동시에 보여줄 슬라이드 갯수
   spaceBetween: 20, // 슬라이드간 간격
@@ -202,8 +202,8 @@ const swiper5 = new Swiper('.poster-box-5 .swiper', {
   
   // Navigation arrows
   navigation: {
-    nextEl: ".poster-box-5 .swiper-button-next",
-    prevEl: ".poster-box-5 .swiper-button-prev"
+    nextEl: ".new-box .swiper-button-next",
+    prevEl: ".new-box .swiper-button-prev"
   },
 });
 

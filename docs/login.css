@@ -441,7 +441,9 @@ input[type="checkbox"]:checked + label {
   visibility: visible;
 }
 
-
+.text-box > p{
+  white-space:nowrap;
+}
 
 /*-------- 푸터 --------*/
 .mainfooter-box {
@@ -449,7 +451,7 @@ input[type="checkbox"]:checked + label {
   font-weight: 800;
   width: var(--site-size);
   height: 464px;
-  background-image: url(https://cdn.jsdelivr.net/gh/solmopark/dipl/docs/img/footer__back.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/solmopark/dipl/docs/img/footer_back_img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
