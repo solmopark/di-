@@ -67,8 +67,6 @@ $(window).scroll(function () {
       });  
   });
 
-
-
 // 스와이퍼
 function SwiperBox1__init() {
   function onActive(_swiper) {
@@ -233,3 +231,26 @@ $("ul.list-1 > li").click(function () {
     $(this).addClass("active");
   }
 });
+
+
+// 별자리효과
+const nodesjs = new NodesJs({
+  id: 'nodes',
+  width: window.innerWidth,
+  height: window.innerHeight,
+  particleSize: 2,
+  lineSize: 1,
+  particleColor: [255, 255, 255, 0.3],
+  lineColor: [255, 255, 255],
+  backgroundFrom: [10, 25, 100],
+  backgroundTo: [25, 50, 150],
+  backgroundDuration: 4000,
+  nobg: true,
+  number: window.hasOwnProperty('orientation') ? 30: 100,
+  speed: 100
+});
+
+window.onresize = function () {
+  nodesjs.setWidth(window.innerWidth);
+  nodesjs.setHeight(window.innerHeight);
+};
