@@ -7,7 +7,7 @@ html > body {
 /* 라이브러리 */
 
 :root{
-  --site-color:#060A16;
+  --site-color:#080e20;
   --site-btn-color: #a8a8a8;
 }
 
@@ -77,7 +77,7 @@ html > body {
 }
 
 .top-bar-ver2__menu-1 {
-  margin-left: 130px;
+  margin-left: 123px;
   font-size: 25px;
   color: white;
   font-weight: 700;
@@ -86,23 +86,31 @@ html > body {
 .top-bar-ver2__menu-1 > ul > li {
   margin-right: 50px;
 }
-
-.top-bar-ver2__menu-1 > ul > li:nth-child(2) > a {
+.top-bar-ver2__menu-1 > ul > li {
+  margin-right: 50px;
+}
+.menu__box > li{
   position: relative;
 }
 
-.top-bar-ver2__menu-1 > ul > li:nth-child(2) > a::after {
+.top-bar-ver2__menu-1 ul li>a > .menu-ball::after {
   content: "";
+  position: absolute;
+  top: 35%;
+  left: 45%;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  top: 59px;
-  left: 50%;
-  transform: translatex(-50%);
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
 }
 
+.top-bar-ver2__menu-1 ul li:hover>a .menu-ball::after {
+  opacity: 1;
+  visibility: visible;
+}
 /* orgin */
 
 .orgin {

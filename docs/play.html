@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disney+ Play</title>
   <!-- 제이쿼리 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
   <!--테일윈드-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
   <!--폰트어썸-->
@@ -17,68 +18,42 @@
 </head>
 
 <body>
+  <!--up-btn-->
+  <img class="up-btn" src="https://cdn.jsdelivr.net/gh/choieunmi/disney_home/top_btn.png" alt="">
   <!-- 헤더 -->
-  <header class="header">
-    <div class="con flex h-full relative">
+  <header class="top-bar-ver2 con">
+    <div class="menu_wrap flex h-full relative">
       <!-- 로고 -->
       <a href="index.html" class="logo items-center h-full  flex">
         <img src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/disney_logo.png" alt="">
       </a>
       <!--메뉴-->
-      <nav class="d-menu-box text-white">
-        <ul class="d-menu-1 flex items-center h-full relative px-4">
-          <li>
-            <a href="index.html" class="flex items-center h-full">홈
-              <div class="menu-ball-1"></div>
-            </a>
-          </li>
-
-          <li>
-            <a href="originer.html" class="flex items-center h-full">오리지널
+      <nav class="top-bar-ver2__menu-1 mr-auto">
+        <ul class="menu__box flex h-full">
+          <li><a href="index.html" class="flex items-center h-full">홈
               <div class="menu-ball"></div>
-            </a>
-          </li>
-          <li>
-            <a href="play.html" class="flex items-center h-full">영화
+            </a></li>
+          <li><a href="originer.html" class="flex items-center h-full">오리지널
               <div class="menu-ball"></div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex items-center h-full">시리즈
+            </a></li>
+          <li><a href="play.html" class="flex items-center h-full">영화
               <div class="menu-ball"></div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex items-center h-full">이벤트
+            </a></li>
+          <li><a href="#" class="flex items-center h-full">시리즈
               <div class="menu-ball"></div>
-            </a>
-          </li>
+            </a></li>
+          <li><a href="#" class="flex items-center h-full">이벤트
+              <div class="menu-ball"></div>
+            </a></li>
         </ul>
       </nav>
 
-
-      <div class="flex-1"></div>
-      <div class="btn items-center h-full flex">
-        <div class="search">
-          <a href="#">
-            <img src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/header-search.png" alt="">
-          </a>
-        </div>
-        <div class="alarm">
-          <a href="#">
-            <img src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/header-bell.png" alt="">
-          </a>
-        </div>
-        <div class="profile">
-          <a href="#">
-            <img src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/header-sulmo.png" alt="">
-          </a>
-        </div>
+      <div class="top-bar-ver2__r-menu self-center">
+        <img src="https://cdn.jsdelivr.net/gh//choieunmi/disney_home/top-bar_icon.png" alt="">
       </div>
 
     </div>
-    <!-- 버튼 -->
-    <img class="up-btn" src="https://cdn.jsdelivr.net/gh/choieunmi/disney_home/top_btn.png" alt="">
+    </div>
   </header>
   <!-- 이터널스 -->
   <section class="section-1 con">
@@ -100,8 +75,8 @@
         <div class="text-box">
           <h1>이터널스(The Eternals)</h1>
           <h2>2021년 ㆍ 155분</h2>
-          <p>마블 스튜디오의 <이터널스>는 수 천년에 걸쳐 그 모습을 드러내지 않고<br>살아온 불멸의 히어로들이 <어벤져스: 엔드게임> 이후 인류의 가장 오래된<br>적 '데비안츠'에 맞서기 위해 다시
-                힘을 합치면서 벌어지는 이야기
+          <p>마블 스튜디오의 &lt;이터널스&gt;는 수 천년에 걸쳐 그 모습을 드러내지 않고<br>살아온 불멸의 히어로들이 &lt;어벤져스: 엔드게임&gt; 이후 인류의 가장 오래된<br>적
+            '데비안츠'에 맞서기 위해 다시 힘을 합치면서 벌어지는 이야기
           </p>
         </div>
         <div class="test-play-box absolute">
@@ -197,19 +172,19 @@
     </div>
   </section>
   <!-- 추천 영화 -->
-  <section class="section-4 con " style="font-weight:800;">
+  <section class="section-4 con ">
     <div class="con-2 movie-box relative">
       <h1>올라프 좋아하세요? 디즈니 영화 모아보기</h1>
       <ul class="grid grid-cols-5 gap-7 movie-list">
         <li>
           <a href="#" class="block img-box"><img class="block w-full"
               src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/movie-list-1-1.png" alt=""></a>
-          <div class="block mt-3">올라프의 선물</div>
+          <a href="#" class="block mt-3">올라프의 선물</a>
         </li>
         <li>
           <a href="#" class="block img-box"><img class="block w-full"
               src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/movie-list-1-2.png" alt=""></a>
-          <div class="block mt-3">토이스토리</div>
+          <a href="#" class="block mt-3">토이스토리</a>
         </li>
         <li>
           <a href="#" class="block img-box"><img class="block w-full"
@@ -324,6 +299,7 @@
     <div class="footer-box">
       <img style="display:block; margin:0 auto;"
         src="https://cdn.jsdelivr.net/gh/yoonh7765/disneypf/docs/img/footer-bar.png" alt="">
+      <div class="blur"></div>
     </div>
   </section>
   <script type="text/javascript" src="play.js"></script>
