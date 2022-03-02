@@ -111,8 +111,12 @@ html > body {
   visibility: visible;
 }
 /* 메인 이미지 */
-.main-img{
-  width:1440px;
+.section-1{
+  padding-top:140px;
+}
+
+.section-1 .move-box{
+  width:1240px;
   height:480px;
 }
 .play-icon{
@@ -409,13 +413,13 @@ html > body {
 }
 /*푸터바*/
 .footer{
-  height:376px;
+  height:326px;
   position:relative;
   z-index:-200;
 }
 .footer-box > img{
-  margin-top:100px;
-  padding-top:120px;
+  padding-top:69px;
+  margin:0 auto;
 }
 
 .footer .blur{
@@ -423,7 +427,7 @@ html > body {
   width:1823px;
   height:206px;
   position:absolute;
-  top:120px;
+  top:80px;
   left:50%;
   z-index:-100;
   transform:translatex(-50%);
