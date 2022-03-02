@@ -111,8 +111,12 @@ html > body {
   visibility: visible;
 }
 /* 메인 이미지 */
-.main-img{
-  width:1440px;
+.section-1{
+  padding-top:140px;
+}
+
+.section-1 .move-box{
+  width:1240px;
   height:480px;
 }
 .play-icon{
