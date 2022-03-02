@@ -858,9 +858,8 @@ html > body .poster-box .swiper-button-disabled {
 
 
 /* 별자리 효과 */
-#nodes-wrap {
+.nodes-wrap {
   pointer-events:none;
-  z-index:;
   opacity:0.6;
 }
 

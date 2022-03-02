@@ -1,3 +1,16 @@
+// top-bar
+$(window).scroll(function () {
+  var test = $(this).scrollTop();
+
+  console.log(test);
+
+  if (test > 172) {
+    $(".top-bar-ver2").addClass("active");
+  }else  { $(".top-bar-ver2").removeClass("active");
+         }
+});
+
+
 // top 버튼
 $(document).ready(function () {
   $(".up-btn").click(function () {
