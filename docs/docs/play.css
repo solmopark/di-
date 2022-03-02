@@ -88,61 +88,15 @@ html > body {
 .top-bar-ver2__menu-1 > ul > li {
   margin-right: 50px;
 }
-
-.top-bar-ver2__menu-1 > ul > li:nth-child(2) > a {
+.menu__box > li{
   position: relative;
 }
 
-
-
-
-/*헤더*/
-.header {
-  height: 163px;
-}
-.header a {
-  color: white;
-  margin: 0 20px;
-  font-weight: bold;
-}
-/* 로고 */
-.logo {
-  padding-left: 50px;
-}
-/*헤더 오른쪽 버튼 */
-.btn{
-  padding-right:50px;
-}
-.search {
-  margin-right: 40px;
-}
-.alarm {
-  margin-right: 40px;
-}
-
-/*-------- 메뉴 --------*/
-.d-menu-1 {
-  padding-left: 120px;
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.d-menu-1 > li {
-  position: relative;
-}
-
-.d-menu-1 > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/*-- 메뉴 볼 --*/
-.d-menu-box > ul > li > a > .menu-ball::after {
+.top-bar-ver2__menu-1 ul li>a > .menu-ball::after {
   content: "";
   position: absolute;
-  top: 2%;
-  left: 46%;
+  top: 35%;
+  left: 45%;
   width: 5px;
   height: 5px;
   background-color: #fff;
@@ -152,7 +106,7 @@ html > body {
   transition: opacity 0.3s;
 }
 
-.d-menu-box > ul > li:hover > a > .menu-ball::after {
+.top-bar-ver2__menu-1 ul li:hover>a .menu-ball::after {
   opacity: 1;
   visibility: visible;
 }
@@ -455,10 +409,27 @@ html > body {
 }
 /*푸터바*/
 .footer{
-  height:200px;
+  height:376px;
+  position:relative;
+  z-index:-200;
 }
-.footer-box img{
+.footer-box > img{
   margin-top:100px;
+  padding-top:120px;
+}
+
+.footer .blur{
+  background-color:#0E0A40;
+  width:1823px;
+  height:206px;
+  position:absolute;
+  top:120px;
+  left:50%;
+  z-index:-100;
+  transform:translatex(-50%);
+    filter: blur(50px);
+  -webkit-filter: blur(50px);
+
 }
 /*---------버튼-------*/
 .up-btn {
